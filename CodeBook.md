@@ -90,7 +90,7 @@ Use this key to corroborate and assign activity names to numerical values (see "
 ```names(sub_train)[1] <- "subject"```
 ```names(train_activity)[1] <- "activity"```
 
-### ![Test](https://github.com/Bc5Neep/GetandCleanData/blob/Cleaning-HAR-Data/CodeBook%20IMGs/test_df%20transform_1.png) 
+### ![Test](https://github.com/Bc5Neep/GetandCleanData/blob/Cleaning-HAR-Data/CodeBook%20IMGs/test%20subject%20activity%20transform%201.png) 
 ```names(sub_test)[1] <- "subject"```
 ```names(test_activity)[1] <- "activity"```
 
