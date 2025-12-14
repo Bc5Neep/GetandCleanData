@@ -107,9 +107,10 @@ Use this key to corroborate and assign activity names to numerical values (see "
 
 
 ### Now values are actual activities, combine subject and activity into two column data frame for;
-### ![Train data]()
+
+### ![Train](https://github.com/Bc5Neep/GetandCleanData/blob/Cleaning-HAR-Data/CodeBook%20IMGs/train_df%20transformation_2.png) 
 train_df <- cbind(sub_train, train_activity)
-### ![Test data]()
+### ![Test](https://github.com/Bc5Neep/GetandCleanData/blob/Cleaning-HAR-Data/CodeBook%20IMGs/test_df%20transform_1.png)
 test_df <- cbind(sub_test, test_activity)
 
 ## Features
@@ -117,10 +118,10 @@ test_df <- cbind(sub_test, test_activity)
 * The feature_names data frame must first be reoriented from 561 x 2 to 2 x 561 to accommodate merging. 
 
 ### Number columns of raw values 1:561 instead of V1:561 (optional)   
-### ![Train](https://github.com/Bc5Neep/GetandCleanData/blob/Cleaning-HAR-Data/CodeBook%20IMGs/train_df%20transformation_2.png)
-colnames(train_raw_value) <- as.character (1:561)
-### ![Test](https://github.com/Bc5Neep/GetandCleanData/blob/Cleaning-HAR-Data/CodeBook%20IMGs/test_df%20transform_1.png)
-colnames(test_raw_value) <- as.character (1:561)
+
+```colnames(train_raw_value) <- as.character (1:561)```
+
+```colnames(test_raw_value) <- as.character (1:561)```
 
 
 ### Flip orientation of feature_names data frame (make columns rows and vice versa)
